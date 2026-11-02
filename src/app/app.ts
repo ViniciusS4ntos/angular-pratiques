@@ -9,7 +9,13 @@ import { RouterOutlet } from '@angular/router';
   
 })
 export class App {
-  // variavel que vai ser usada no html
-  protected readonly title = signal('World');
-  protected readonly name = signal('Angular');
+  // variavel que vai ser usada no html pode chamar com {{ title() }}
+  protected readonly title = signal('world');
+
+  // definindo simples com ts
+  name = 'Angular';
+
+  nivel = "22";
+
+
 }
