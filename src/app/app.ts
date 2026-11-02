@@ -3,10 +3,13 @@ import { RouterOutlet } from '@angular/router';
 
 @Component({
   imports: [RouterOutlet],
-  selector: 'app-root',
-  styleUrl: './app.css',
-  templateUrl: './app.html',
+  selector: 'app-root', // nome da tag do componente \ eu posso mudar e so basta mudar no index.html apra ele encontra dnv
+  templateUrl: './app.html', // mostra o caminho do html
+  styleUrl: './app.css', //  mostra caminho do css
+  
 })
 export class App {
-  protected readonly title = signal('projeto1');
+  // variavel que vai ser usada no html
+  protected readonly title = signal('World');
+  protected readonly name = signal('Angular');
 }
